@@ -4,6 +4,7 @@ import screens.VentanaPrincipal;
 public class App {
     public static void main(String[] args) throws Exception {
         
+        //Solo para asegurar que la aparencia sea consistente en wingows
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Windows".equals(info.getName())) {
@@ -12,7 +13,7 @@ public class App {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); 
         }
         VentanaPrincipal ventanaPrincipal = new VentanaPrincipal("Proyecto Escuela");
         ventanaPrincipal.setSize(500,500);

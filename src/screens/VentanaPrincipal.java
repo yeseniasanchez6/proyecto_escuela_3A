@@ -50,7 +50,7 @@ public class VentanaPrincipal extends JFrame{
         jMenuItemInsertarCarreras = new JMenuItem();
         jMenuItemInsertarCarreras.setText("Insertar...");
 
-        jMenuItemInsertarCarreras.addActionListener(e -> jmiInsertarCarreras());
+        jMenuItemInsertarCarreras.addActionListener(e -> jmiInsertarCarreras()); //R
        
 
 
@@ -68,8 +68,13 @@ public class VentanaPrincipal extends JFrame{
     }
 
     private void jmiInsertarCarreras(){
+        //Crear un objeto de tipo JInternalFrame
         JInternalFrameInsertarCarrera insertarCarrera = new JInternalFrameInsertarCarrera();
+
+        //Agregar el InternalFrame al escritorio
         this.desktop.add(insertarCarrera);
+
+        //Le digo que se muestre el InternalFrame
         insertarCarrera.setVisible(true);
     }
 
